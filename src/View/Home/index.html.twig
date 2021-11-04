@@ -1,0 +1,17 @@
+{% extends "layout.html.twig" %}
+
+{% block content %}
+    <main>
+        <form action="/" method="POST">
+            <label>
+                Light theme: <input name="theme" type="radio" value="light" {{ theme == 'light' ? 'checked' : '' }}/>
+            </label>
+            <label>
+                Dark theme: <input name="theme" type="radio" value="dark" {{ theme == 'dark' ? 'checked' : '' }}/>
+            </label>
+            <input type="submit" value="Save preference"/>
+            <!-- TODO: save the value in cookie and use the selected theme -->
+            <!-- BONUS: check the selected theme -->
+        </form>
+    </main>
+{% endblock %}

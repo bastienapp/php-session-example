@@ -1,0 +1,44 @@
+:root {
+    /* light theme variables */
+    --font-color: black;
+    --background-color: white;
+    --link-color: blue;
+
+    /* dark theme variables */
+    --font-color-dark: white;
+    --background-color-dark: black;
+    --link-color-dark: lightblue;
+}
+
+/* light theme */
+body {
+    color: var(--font-color);
+    background-color: var(--background-color);
+}
+
+a,
+a:visited {
+    color: var(--link-color);
+}
+
+/* dark theme */
+body.dark {
+    color: var(--font-color-dark);
+    background-color: var(--background-color-dark);
+}
+
+.dark a,
+.dark a:visited {
+    color: var(--link-color-dark);
+}
+
+/* navigation */
+nav ul {
+    display: flex;
+    padding: 0;
+    gap: 1rem;
+}
+
+nav li {
+    list-style: none;
+}

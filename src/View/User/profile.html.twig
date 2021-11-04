@@ -1,0 +1,14 @@
+{% extends "layout.html.twig" %}
+
+{% block content %}
+    <main>
+        <!-- TODO: if the user is logged, show their profile -->
+        <ul>
+            <li>{{ user['firstname'] }}</li>
+            <li>{{ user['lastname'] }}</li>
+            <li>
+                <img src="{{ user['picture'] }}" alt="profile picture">
+            </li>
+        </ul>
+    </main>
+{% endblock %}
